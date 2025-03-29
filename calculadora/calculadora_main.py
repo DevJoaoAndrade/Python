@@ -1,38 +1,36 @@
 from funcoes import calculos, validador
 
 total = 0
-opcao_funcionamento_while = False
+flag_total = True
 
-print('Calculadora (Pressione "x" para iniciar ou "=" para encerrar seu calculo!)')
-opcao_menu_inicial = input('Digite aqui:')
-
-if opcao_menu_inicial == 'x':
-    opcao_funcionamento_while = True
-elif opcao_menu_inicial == '=':
+while True:
+    
     print(f'Total = {total}')
-else:
-    pass
-
-while opcao_funcionamento_while:
     operador = input('Digite a operação: ')
+    
     if operador == '=':
-        print(total)
+        print(f'Total = {total}')
         break
     elif operador in "+-*/":
+        
+        if flag_total:
+            total = int(input('Digite um valor: '))
+            flag_total = False
+        
         while True:
-            numero1 = int(input('Digite um numero: '))
-            numero2 = int(input('Digite outro numero: '))
+            segundo_numero = int(input('Digite outro numero: '))
             
             if operador == '+':
-                total += calculos.soma(numero1, numero2)
+                total = calculos.soma(total, segundo_numero)
                 break
             elif operador == '-':
-                pass
+                total = calculos.subtracao(total, segundo_numero)
+                break
             elif operador == '*':
-                pass
+                total = calculos.multiplicacao(total, segundo_numero)
+                break
             elif operador == '/':
                 pass
-                
             else:
                 print('Operador inválido!')
 
