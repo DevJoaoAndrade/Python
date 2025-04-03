@@ -28,7 +28,9 @@ if __name__ == '__main__':
             break
         else:
             print('Opção inválida, escolha outra opção.')
-        time.sleep(3)
+        # Uso so time.sleep para dar tempo do usuário ver o resultado da execução
+        time.sleep(4)
+        # Uso os os.system para limpar o terminal apos a execução
         os.system('cls' if os.name == 'nt' else 'clear')
     
     

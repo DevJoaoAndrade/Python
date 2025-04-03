@@ -1,5 +1,6 @@
 from  random import randint
 
+# Essa função gera 9 digitos em uma string e retorna para o main
 def gerar_nove_numeros():
     nove_digitos = ''
     for _ in range(9):
