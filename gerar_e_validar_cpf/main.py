@@ -4,7 +4,7 @@ from utils.gerador_digito_verificador import gerar_digito_verificador
 
 if __name__ == '__main__':
     while True:
-        opcao_menu = input('1 - Gerar CPF\n2 - Verificar CPF\n3 - Sair\nDigite aqui: ')
+        opcao_menu = input('1 - Gerar CPF\n2 - Validar CPF\n3 - Sair\nDigite aqui: ')
         if opcao_menu == '1':
                 
             nove_digitos_cpf = gerar_nove_numeros()
@@ -16,7 +16,7 @@ if __name__ == '__main__':
             cpf = dez_digitos_cpf + segundo_verificador
             print(cpf)
         elif opcao_menu == '2':
-            pass
+            cpf_para_validar = input('Validar CPF\nDigite o CPF:')
         elif opcao_menu == '3':
             break
         else:
