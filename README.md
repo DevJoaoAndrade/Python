@@ -10,3 +10,7 @@ Calculadora:
 Gerar e validar CPF:
 <br>
 [![Status do Projeto](https://img.shields.io/badge/status-em%20andamento-yellow)](https://github.com/DevJoaoAndrade/Python/tree/main/gerar_e_validar_cpf)
+
+Pedra papel e tesoura:
+<br>
+![Status do Projeto](https://img.shields.io/badge/status-em%20andamento-yellow)
