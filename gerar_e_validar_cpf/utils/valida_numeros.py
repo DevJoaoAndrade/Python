@@ -6,5 +6,4 @@ def removedor_de_simbolos(cpf_entrada):
             cpf_sem_simbolos += ''
             continue
         cpf_sem_simbolos += numero
-    
     return cpf_sem_simbolos
